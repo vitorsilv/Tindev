@@ -4,10 +4,6 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
-
-# Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Runtime data
 pids
@@ -20,12 +16,11 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
-*.lcov
 
 # nyc test coverage
 .nyc_output
 
-# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
 # Bower dependency directory (https://bower.io/)
@@ -44,9 +39,6 @@ jspm_packages/
 # TypeScript v1 declaration files
 typings/
 
-# TypeScript cache
-*.tsbuildinfo
-
 # Optional npm cache directory
 .npm
 
@@ -64,35 +56,21 @@ typings/
 
 # dotenv environment variables file
 .env
-.env.test
-
-# parcel-bundler cache (https://parceljs.org/)
-.cache
 
 # next.js build output
 .next
 
-# nuxt.js build output
-.nuxt
+.directory
 
-# vuepress build output
-.vuepress/dist
+package-lock.json
 
-# Serverless directories
-.serverless/
-
-# FuseBox cache
-.fusebox/
-
-# DynamoDB Local files
-.dynamodb/
+# OSX
+#
+.DS_Store
 
 # Xcode
-!**/*.xcodeproj
-!**/*.pbxproj
-!**/*.xcworkspacedata
-!**/*.xcsettings
-!**/*.xcscheme
+#
+build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -110,64 +88,15 @@ DerivedData
 *.xcuserstate
 project.xcworkspace
 
-# Gradle
-/build/
-/RNTester/android/app/build/
-/RNTester/android/app/gradle/
-/RNTester/android/app/gradlew
-/RNTester/android/app/gradlew.bat
-/ReactAndroid/build/
-
-# Buck
-.buckd
-buck-out
-/ReactAndroid/src/main/jni/prebuilt/lib/armeabi-v7a/
-/ReactAndroid/src/main/jni/prebuilt/lib/x86/
-/ReactAndroid/src/main/gen
-
-# Watchman
-.watchmanconfig
-
-# Android
+# Android/IJ
+#
 .idea
 .gradle
 local.properties
-*.iml
-/android/
 
-# Node
-node_modules
-*.log
-.nvm
-/bots/node_modules/
-package-lock.json
 
-# OS X
-.DS_Store
-
-# Test generated files
-/ReactAndroid/src/androidTest/assets/AndroidTestBundle.js
-*.js.meta
-
-/coverage
-/third-party
-
-# Root dir shouldn't have Xcode project
-/*.xcodeproj
-
-# ReactCommon subdir shouldn't have Xcode project
-/ReactCommon/**/*.xcodeproj
-RNTester/build
-
-# Libs that shouldn't have Xcode project
-/Libraries/FBLazyVector/**/*.xcodeproj
-/Libraries/FBReactNativeSpec/**/*.xcodeproj
-/Libraries/RCTRequired/**/*.xcodeproj
-/React/CoreModules/**/*.xcodeproj
-/packages/react-native-codegen/**/*.xcodeproj
-
-# CocoaPods
-/template/ios/Pods/
-/template/ios/Podfile.lock
-RNTester/Pods/Local Podspecs
-RNTester/Pods/Target Support Files
+# BUCK
+buck-out/
+\.buckd/
+android/app/libs
+android/keystores/debug.keystore
